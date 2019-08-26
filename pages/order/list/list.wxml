@@ -1,0 +1,53 @@
+<view class="container">
+    <view class="item">
+        <view class="itemHeader">
+            <text class="itemDateTime">2019-07-14 15:22:56</text>
+            <text class="itemStatus">已签收</text>
+        </view>
+        <view class="itemContent">
+            <view class="itemGoodsList">
+                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+            </view>
+            <view class="itemPrice"><text class="number">共5件 实付:</text><text class="price">￥42.5</text></view>
+        </view>
+        <view class="bts">
+            <view class="rebuyBt">再来一单</view>
+            <view class="remark">评价</view>
+        </view>
+    </view>
+    <view class="item">
+        <view class="itemHeader">
+            <text class="itemDateTime">2019-07-14 15:22:56</text>
+            <text class="itemStatus">已签收</text>
+        </view>
+        <view class="itemContent">
+            <view class="itemGoodsList">
+                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+            </view>
+            <view class="itemPrice"><text class="number">共5件 实付:</text><text class="price">￥42.5</text></view>
+        </view>
+        <view class="bts">
+            <view class="rebuyBt">再来一单</view>
+            <view class="remark">评价</view>
+        </view>
+    </view>
+    <view class="item">
+        <view class="itemHeader">
+            <text class="itemDateTime">2019-07-14 15:22:56</text>
+            <text class="itemStatus">已签收</text>
+        </view>
+        <view class="itemContent">
+            <view class="itemGoodsList">
+                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+            </view>
+            <view class="itemPrice"><text class="number">共5件 实付:</text><text class="price">￥42.5</text></view>
+        </view>
+        <view class="bts">
+            <view class="rebuyBt">再来一单</view>
+            <view class="remark">评价</view>
+        </view>
+    </view>
+</view>

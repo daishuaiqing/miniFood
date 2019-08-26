@@ -1,0 +1,75 @@
+<!--pages/my/my.wxml-->
+<view class='my-box'>
+  <view class="content">
+    <view class='headerimg'>
+      <image model="aspectFill" src="/res/image/me.jpg"></image>
+    </view>
+    <view class='userinfo'>
+      <text class='username'>登陆/注册</text>
+         <text class="tip">立即开启水果之旅</text>
+         <!-- <text wx:if='{{userinfo.mobile ==="" ? false:true}}' class='userphone'>{{userinfo.mobile}}</text>
+         <button wx:if='{{userinfo.mobile ==="" ? true:false}}' open-type="getPhoneNumber" class='bingphone' bindgetphonenumber='bindMobile'>绑定手机</button>   -->
+    </view>
+  </view>
+  <view class='my-kind'>
+    <view class='my-like' bindtap='gototry'>
+      <view class='try'>
+        <view class='imgbox'>
+          <image src='/res/image/mylike.png' class='mylike' mode='widthFix'></image>
+        </view>
+        <text>我的收藏</text>
+      </view>
+      <image src='/res/image/fh.png'></image>
+    </view>
+    <view class='my-like' bindtap='gotocou'>
+      <view class='try'>
+        <view class='imgbox'>
+          <image src='/res/image/yhj.png' class='mycoupon' mode='widthFix'></image>
+        </view>
+        <text>我的优惠券</text>
+      </view>
+      <image src='/res/image/fh.png'></image>
+    </view>
+    <view class='my-like' bindtap='gotogift'>
+      <view class='try'>
+        <view class='imgbox'>
+          <image src='/res/image/gift.png' class='mygift' mode='widthFix'></image>
+        </view>
+        <text>福利码兑换</text>
+      </view>
+      <image src='/res/image/fh.png'></image>
+    </view>
+    <view class='my-likes' bindtap='gotoaddress'>
+      <view class='try'>
+        <view class='imgbox'>
+          <image src='/res/image/dz.png' mode='widthFix' class='myaddress'></image>
+        </view>
+
+        <text>收货地址</text>
+      </view>
+      <image src='/res/image/fh.png'></image>
+    </view>
+  </view>
+  <view class='my-kind'>
+    <view class='my-like' bindtap='gotoservice'>
+      <view class='try'>
+        <view class='imgbox'>
+          <image src='/res/image/kf.png' class='mykf' mode='widthFix'></image>
+        </view>
+
+        <text>客服中心</text>
+      </view>
+      <image src='/res/image/fh.png'></image>
+    </view>
+    <view class='my-likes' bindtap='gotoabout'>
+      <view class='try'>
+        <view class='imgbox'>
+          <image src='/res/image/ln.png' class='myabout' mode='widthFix'></image>
+        </view>
+
+        <text>关于鲸选</text>
+      </view>
+      <image src='/res/image/fh.png'></image>
+    </view>
+  </view>
+</view>

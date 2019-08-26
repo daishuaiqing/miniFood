@@ -1,0 +1,89 @@
+page{
+    background: #F4F4F4;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #FFFFFF;
+    margin-top: 9rpx;
+}
+.itemHeader{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 27rpx 45rpx;
+    justify-content: space-between;
+}
+.itemDateTime{
+    color: #5c5c5c;
+    font-size: 25rpx;
+}
+.itemStatus{
+    color: rgb(185, 51, 51);
+    font-size: 25rpx;   
+}
+.itemContent{
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx 45rpx;
+    border-top: 1rpx solid rgb(243, 243, 243);
+    border-bottom: 1rpx solid rgb(243, 243, 243);
+}
+.itemGoodsList{
+    display: flex;
+    flex-direction: ros;
+}
+.goodsIcon{
+    width: 118rpx;
+    height: 118rpx;
+    border-radius: 5rpx;
+    margin-right: 18rpx;
+}
+.itemPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.number{
+    font-size: 24rpx;
+    color: rgb(88, 88, 88);
+    margin-right: 20rpx;
+}
+.price{
+    font-size: 29rpx;
+    color: #444444;
+}
+.bts{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 25rpx 45rpx;
+}
+.rebuyBt{
+    width: 120rpx;
+    height: 53rpx;
+    font-size: 25rpx;
+    color: #666666;
+    border: 1rpx solid #C0C0C0;
+    border-radius: 9rpx;
+    text-align: center;
+    line-height: 53rpx;
+}
+.remark{
+    width: 120rpx;
+    height: 53rpx;
+    font-size: 25rpx;
+    color: #666666;
+    border: 1rpx solid #C0C0C0;
+    border-radius: 9rpx;
+    text-align: center;
+    line-height: 53rpx;
+    margin-left: 30rpx;
+}
+

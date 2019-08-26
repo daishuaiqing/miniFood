@@ -1,0 +1,245 @@
+/**index.wxss**/
+page {
+  background: #F4F4F4;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 91rpx;
+  width: 750rpx;
+  align-items: center;
+  background: #FFFFFF;
+}
+.map {
+  display: flex;
+  flex-direction: row;
+  width: 159rpx;
+  justify-content: center;
+}
+.map image{
+  height: 43rpx;
+  width: 30rpx;
+}
+.mapContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 576rpx;
+  height: 56rpx; 
+  background: #F5F5F5;
+  border-radius: 11rpx;
+}
+.mapText {
+  font-size: 28rpx;
+  color: #6A6A6A;
+  line-height: 56rpx;
+  margin-left: 14rpx;
+}
+.mapContent image {
+  width: 9rpx;
+  height: 18rpx;
+  margin-right: 14rpx;
+}
+.bd {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 22%;
+}
+.categoryChoose {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 121rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #408D4A;
+  background: #FFFFFF;
+  margin-top: 1rpx;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 121rpx;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 1rpx;
+}
+.right {
+  width: 78%;
+  background: #FFFFFF;
+  margin-top: 1rpx;
+}
+.goodsItem {
+  display: flex;
+  flex-direction: row;
+  width: 592rpx;
+  height: 239rpx;
+  border-bottom: 1rpx solid #F4F4F4;
+}
+.goodsIcon {
+  display: block;
+  width: 159rpx;
+  height: 159rpx;
+  margin: 40rpx 20rpx;
+}
+.goodsContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40rpx 0rpx;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.goodsName {
+  color: #212121;
+  font-size: 29rpx;
+  font-weight:400;
+}
+.goodsBrief {
+  color: #969696;
+  font-size: 22rpx;
+  margin-top: 9rpx;
+}
+.priceContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.priceContent image {
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 18rpx;
+}
+.goodsPrice {
+  color: #F1A33B;
+  font-size: 25rpx;
+}
+.goodsOriginPrice {
+  color: #969696;
+  font-size: 22rpx;
+  margin-left: 9rpx;
+  text-decoration: line-through;
+}
+.cart {
+  position: fixed;
+  bottom: 0rpx;
+}
+.cartRect {
+  height: 100rpx;
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+}
+.calcuPrice {
+  width: 556rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.settle {
+  width: 194rpx;
+  height: 100rpx;
+  background: #F2A43B;
+  text-align: center;
+  line-height: 100rpx;
+  color: #FFFFFF;
+  font-size: 31rpx;
+}
+.total {
+  color: #F1A33B;
+  font-size: 33rpx;
+  margin-left: 33rpx;
+  margin-top: 15rpx;
+}
+.freight {
+  color: #9C9C9C;
+  font-size: 18rpx;
+  margin-left: 40rpx;
+}
+.calcuPrice image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: -18rpx;
+  margin-left: 18rpx;
+}
+.cartGoods {
+  height: 130rpx;
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #F5F5F5;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartGoodsName {
+  margin-left: 15rpx;
+  color: #666666;
+  font-size: 27rpx;
+}
+.cartGoodsPrice {
+  color: #F1A33B;
+  font-size: 25rpx;
+}
+.cartGoodsNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.numberBt {
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 16rpx;
+}
+.bumberText {
+  margin-right: 16rpx;
+  color: #666666;
+  font-size: 26rpx;
+}
+.cartHeader {
+  display: flex;
+  flex-direction: row;
+  height: 69rpx;
+  width: 100%;
+  justify-content: space-between;
+  background: #F5F5F5;
+  align-items: center;
+}
+.del {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.delTitle {
+  margin-left: 24rpx;
+  color: #222222;
+  font-size: 25rpx;
+}
+.delBt {
+  color: #666666;
+  font-size: 25rpx;
+  margin-right: 16rpx;
+}
+.numberDel {
+  width: 23rpx;
+  height: 27rpx;
+  margin-right: 10rpx;
+}

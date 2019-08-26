@@ -1,0 +1,177 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="map">
+      <image src="/res/image/map.png"></image>
+    </view>
+    <view class="mapContent">
+      <text class="mapText">配送至：浦东新区金桥镇巨峰路1058...</text>
+      <image src="/res/image/goto.png"></image>
+    </view>
+  </view>
+  <view class="bd">
+    <!-- 左边菜单 -->
+    <view class="left">
+      <!-- <scroll-view scroll-y style="height: 100%;"> -->
+        <view class="categoryChoose">
+          <text class="categoryText">好吃推荐</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">新品尝鲜</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">所有果品</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">鲜果现切</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">招牌果品</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">西瓜密瓜</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">葡提浆果</text>
+        </view>
+        <view class="category">
+          <text class="categoryText">桃李杏枣</text>
+        </view>
+      <!-- </scroll-view> -->
+    </view>
+    <!-- 右边商品列表 -->
+    <view class="right" style="height: {{height}}rpx">
+      <scroll-view scroll-y style="height: 100%;">
+        <view class="goodsItem">
+          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view class="goodsContent">
+            <view class="title">
+              <text class="goodsName">【2斤92折】B级-进口车...</text>
+              <text class="goodsBrief">1份/约1000g</text>
+            </view>
+            <view class="priceContent">
+              <span>
+                <text class="goodsPrice">￥128.00</text>
+                <text class="goodsOriginPrice">139.80</text>
+              </span>
+              <view><image src="/res/image/add.png"></image></view>
+            </view>
+          </view>
+        </view>
+        <view class="goodsItem">
+          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view class="goodsContent">
+            <view class="title">
+              <text class="goodsName">【2斤92折】B级-进口车...</text>
+              <text class="goodsBrief">1份/约1000g</text>
+            </view>
+            <view class="priceContent">
+              <span>
+                <text class="goodsPrice">￥128.00</text>
+                <text class="goodsOriginPrice">139.80</text>
+              </span>
+              <view><image src="/res/image/add.png"></image></view>
+            </view>
+          </view>
+        </view>
+        <view class="goodsItem">
+          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view class="goodsContent">
+            <view class="title">
+              <text class="goodsName">【2斤92折】B级-进口车...</text>
+              <text class="goodsBrief">1份/约1000g</text>
+            </view>
+            <view class="priceContent">
+              <span>
+                <text class="goodsPrice">￥128.00</text>
+                <text class="goodsOriginPrice">139.80</text>
+              </span>
+              <view><image src="/res/image/add.png"></image></view>
+            </view>
+          </view>
+        </view>
+        <view class="goodsItem">
+          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view class="goodsContent">
+            <view class="title">
+              <text class="goodsName">【2斤92折】B级-进口车...</text>
+              <text class="goodsBrief">1份/约1000g</text>
+            </view>
+            <view class="priceContent">
+              <span>
+                <text class="goodsPrice">￥128.00</text>
+                <text class="goodsOriginPrice">139.80</text>
+              </span>
+              <view><image src="/res/image/add.png"></image></view>
+            </view>
+          </view>
+        </view>
+        <view class="goodsItem">
+          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view class="goodsContent">
+            <view class="title">
+              <text class="goodsName">【2斤92折】B级-进口车...</text>
+              <text class="goodsBrief">1份/约1000g</text>
+            </view>
+            <view class="priceContent">
+              <span>
+                <text class="goodsPrice">￥128.00</text>
+                <text class="goodsOriginPrice">139.80</text>
+              </span>
+              <view><image src="/res/image/add.png"></image></view>
+            </view>
+          </view>
+        </view>
+        
+      </scroll-view>
+    </view>
+  </view>
+  <view class="cart">
+    <view style="visibility:{{isShowCart?'visible':'hidden'}}">
+      <view class="cartHeader">
+        <view class="delTitle">已选商品</view>
+        <view class="del">
+          <view><image class="numberDel" src="/res/image/del.png"></image></view>
+          <view class="delBt">清空</view>
+        </view>
+      </view>
+      <view class="cartGoods">
+        <view class="cartGoodsName">A级-黑宝石葡萄</view>
+        <view class="cartGoodsPrice">￥23.50</view>
+        <view class="cartGoodsNumber">
+          <view><image class="numberBt" src="/res/image/cut.png"></image></view>
+          <view class="bumberText">2</view>
+          <view><image class="numberBt" src="/res/image/add.png"></image></view>
+        </view>
+      </view>
+      <view class="cartGoods">
+        <view class="cartGoodsName">A级-黑宝石葡萄</view>
+        <view class="cartGoodsPrice">￥23.50</view>
+        <view class="cartGoodsNumber">
+          <view><image class="numberBt" src="/res/image/cut.png"></image></view>
+          <view class="bumberText">2</view>
+          <view><image class="numberBt" src="/res/image/add.png"></image></view>
+        </view>
+      </view>
+      <view class="cartGoods">
+        <view class="cartGoodsName">A级-黑宝石葡萄</view>
+        <view class="cartGoodsPrice">￥23.50</view>
+        <view class="cartGoodsNumber">
+          <view><image class="numberBt" src="/res/image/cut.png"></image></view>
+          <view class="bumberText">2</view>
+          <view><image class="numberBt" src="/res/image/add.png"></image></view>
+        </view>
+      </view>
+    </view>
+    <view class="cartRect" style="visibility:{{isShowCartBar?'visible':'hidden'}}">
+      <view class="calcuPrice">
+        <view bindtap="openCart"><image src="/res/image/cart.png"></image></view>
+        <view>
+          <view class="total">￥66.90</view>
+          <view class="freight">不含运费</view>
+        </view>
+      </view>
+      <view class="settle">去结算</view>
+    </view>
+  </view>
+</view>

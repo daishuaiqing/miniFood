@@ -1,0 +1,187 @@
+/* pages/my/my.wxss */
+page {
+    background: #F5F5F7;
+  }
+  .my-box {
+    background: #F5F5F7;
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    width:100%;
+    height:280rpx;
+    background:#48B871;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .headerimg {
+     width: 120rpx;
+     height: 120rpx; 
+     margin-left: 40rpx;
+  }
+  .headerimg image {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+  }
+  .userinfo {
+    margin-left: 40rpx;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .username {
+    font-size: 40rpx;
+    color: #fff;
+  }
+  .userphone {
+    font-size: 30rpx;
+    margin-top: 10rpx;
+    color: #fff;
+  }
+  .bingphone {
+    background-color: #48B871;
+    font-size: 30rpx;
+    color: #fff;
+    padding: 0;
+  }
+  .order {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 108rpx;
+    align-items: center;
+    padding: 0 36rpx;
+    font-size: 32rpx;
+    color: #333;
+    border-bottom: 2rpx solid #ddd;
+  }
+  .allorder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .allorder image {
+    width: 14rpx;
+    height: 26rpx;
+    margin-left: 12rpx;
+  }
+  .orderkind {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 36rpx;
+  }
+  .allkind {
+    height: 174rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+  .allkind image {
+    margin-top: 37rpx;
+    width: 44rpx;
+    height: 44rpx;
+  }
+  .allkind:nth-of-type(2) image{
+    width: 50rpx;
+    height: 44rpx;
+  }
+  .allkind:nth-of-type(4) image{
+    margin-top: 35rpx;
+    width: 40rpx;
+    height: 48rpx;
+  }
+  .allkind text {
+    margin-top: 20rpx;
+    color: #666;
+  }
+  .my-kind {
+    margin-top: 20rpx;
+    padding: 0 36rpx;
+    background: #fff;
+  }
+  .my-kind:nth-last-of-type(1) {
+    margin-bottom: 20rpx;
+  }
+  .my-kind .my-like {
+    width: 100%;
+    height: 108rpx;
+    line-height: 108rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 2rpx solid #ddd;
+  }
+  .my-kind .my-likes {
+    width: 100%;
+    height: 108rpx;
+    line-height: 108rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .my-likes image {
+    width: 14rpx;
+    height: 26rpx;
+  }
+  .my-likes .try {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .my-like image {
+    width: 14rpx;
+    height: 26rpx;
+  }
+  .my-like .try {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .try text {
+    font-size:32rpx;
+    margin-left: 24rpx;
+  }
+  
+  .try .mylike {
+    width: 40rpx;
+    height: 36rpx;
+  }
+  .try .mycoupon {
+    width: 40rpx;
+    height: 32rpx;
+  }
+  .try .mygift {
+    width: 38rpx;
+    height: 36rpx;
+  }
+  .try .myaddress {
+    width: 36rpx;
+    height: 38rpx;
+  }
+  .try .mykf {
+    width: 40rpx;
+    height: 40rpx;
+  }
+  .try .myabout {
+    width: 32rpx;
+    height: 36rpx;
+  }
+  .imgbox {
+    display: flex;
+    width: 50rpx;
+    justify-content: center;
+  }
+  .tip{
+      font-size: 25rpx;
+      color: rgb(241, 241, 241);
+      margin-top: 10rpx;
+  }

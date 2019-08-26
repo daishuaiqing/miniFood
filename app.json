@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/list/list",
+    "pages/order/detail/detail",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "鲸选果园",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fcfcfc",
+    "borderStyle": "black",
+    "selectedColor": "#48B871",
+    "color": "#666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "res/image/home.png",
+        "selectedIconPath": "res/image/home_b.png",
+        "text": "及时达"
+      },
+      {
+        "pagePath": "pages/order/list/list",
+        "iconPath": "res/image/order.png",
+        "selectedIconPath": "res/image/order_b.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "res/image/user.png",
+        "selectedIconPath": "res/image/user_b.png",
+        "text": "会员"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
