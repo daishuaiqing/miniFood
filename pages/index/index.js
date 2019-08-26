@@ -5,7 +5,7 @@ const app = getApp()
 Page({
   data: {
     isShowCart: false,//是否显示购物车商品
-    isShowCartBar: false,//是否显示购物车的Bar
+    isShowCartBar: true,//是否显示购物车的Bar
     cart: [],//购物车
   },
   //事件处理函数

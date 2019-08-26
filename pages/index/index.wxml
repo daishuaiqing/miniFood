@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="header">
+  <!-- <view class="header">
     <view class="map">
       <image src="/res/image/map.png"></image>
     </view>
@@ -8,15 +8,15 @@
       <text class="mapText">配送至：浦东新区金桥镇巨峰路1058...</text>
       <image src="/res/image/goto.png"></image>
     </view>
-  </view>
+  </view> -->
   <view class="bd">
     <!-- 左边菜单 -->
     <view class="left">
       <!-- <scroll-view scroll-y style="height: 100%;"> -->
-        <view class="categoryChoose">
+        <view class="category">
           <text class="categoryText">好吃推荐</text>
         </view>
-        <view class="category">
+        <view class="categoryChoose">
           <text class="categoryText">新品尝鲜</text>
         </view>
         <view class="category">
@@ -59,7 +59,7 @@
           </view>
         </view>
         <view class="goodsItem">
-          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view><image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/b1a66948f8e00627c1099ed36792cc18eecc78fc27be8-YZw1E1_fw658.jpg"></image></view>
           <view class="goodsContent">
             <view class="title">
               <text class="goodsName">【2斤92折】B级-进口车...</text>
@@ -75,7 +75,7 @@
           </view>
         </view>
         <view class="goodsItem">
-          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view><image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/058186bb59a711eac88bfea9325a891b0151734f7355a-jJWtI6_fw658.jpg"></image></view>
           <view class="goodsContent">
             <view class="title">
               <text class="goodsName">【2斤92折】B级-进口车...</text>
@@ -91,7 +91,7 @@
           </view>
         </view>
         <view class="goodsItem">
-          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view><image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/c27dca93964a816a366cb9b96019825f543b4b36127fd-OsrILd_fw658.jpg"></image></view>
           <view class="goodsContent">
             <view class="title">
               <text class="goodsName">【2斤92折】B级-进口车...</text>
@@ -107,7 +107,7 @@
           </view>
         </view>
         <view class="goodsItem">
-          <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+          <view><image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/750f6e646340936debed9d7c89759047b8206de33094c-fJx9Vf_fw658.jpg"></image></view>
           <view class="goodsContent">
             <view class="title">
               <text class="goodsName">【2斤92折】B级-进口车...</text>
@@ -165,6 +165,7 @@
     </view>
     <view class="cartRect" style="visibility:{{isShowCartBar?'visible':'hidden'}}">
       <view class="calcuPrice">
+        <view class="number-icon">3</view>
         <view bindtap="openCart"><image src="/res/image/cart.png"></image></view>
         <view>
           <view class="total">￥66.90</view>
