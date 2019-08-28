@@ -6,10 +6,26 @@
         </view>
         <view class="itemContent">
             <view class="itemGoodsList">
-                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
-                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/c27dca93964a816a366cb9b96019825f543b4b36127fd-OsrILd_fw658.jpg"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/750f6e646340936debed9d7c89759047b8206de33094c-fJx9Vf_fw658.jpg"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/b1a66948f8e00627c1099ed36792cc18eecc78fc27be8-YZw1E1_fw658.jpg"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/058186bb59a711eac88bfea9325a891b0151734f7355a-jJWtI6_fw658.jpg"></image>
+                </view>
             </view>
-            <view class="itemPrice"><text class="number">共5件 实付:</text><text class="price">￥42.5</text></view>
+            <view class="itemPrice">
+                <text class="number">共5件 实付:</text>
+                <text class="price">￥42.5</text>
+            </view>
         </view>
         <view class="bts">
             <view class="rebuyBt">再来一单</view>
@@ -23,10 +39,23 @@
         </view>
         <view class="itemContent">
             <view class="itemGoodsList">
-                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
-                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+                <view>
+                    <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/b1a66948f8e00627c1099ed36792cc18eecc78fc27be8-YZw1E1_fw658.jpg"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/058186bb59a711eac88bfea9325a891b0151734f7355a-jJWtI6_fw658.jpg"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/c27dca93964a816a366cb9b96019825f543b4b36127fd-OsrILd_fw658.jpg"></image>
+                </view>
             </view>
-            <view class="itemPrice"><text class="number">共5件 实付:</text><text class="price">￥42.5</text></view>
+            <view class="itemPrice">
+                <text class="number">共5件 实付:</text>
+                <text class="price">￥42.5</text>
+            </view>
         </view>
         <view class="bts">
             <view class="rebuyBt">再来一单</view>
@@ -40,10 +69,17 @@
         </view>
         <view class="itemContent">
             <view class="itemGoodsList">
-                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
-                <view><image class="goodsIcon" src="/res/image/qingcheng.png"></image></view>
+                <view>
+                    <image class="goodsIcon" src="https://raw.githubusercontent.com/daishuaiqing/GraphicBed/master/img/750f6e646340936debed9d7c89759047b8206de33094c-fJx9Vf_fw658.jpg"></image>
+                </view>
+                <view>
+                    <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
+                </view>
             </view>
-            <view class="itemPrice"><text class="number">共5件 实付:</text><text class="price">￥42.5</text></view>
+            <view class="itemPrice">
+                <text class="number">共5件 实付:</text>
+                <text class="price">￥42.5</text>
+            </view>
         </view>
         <view class="bts">
             <view class="rebuyBt">再来一单</view>
