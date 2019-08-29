@@ -1,0 +1,19 @@
+page{
+    display: flex;
+}
+.left{
+    background: #67d870;
+    width: 50%;
+    height: 100vh;
+}
+.right{
+    background: #aa0808;
+    width: 50%;
+    height: 100vh;
+}
+.right view{
+    height: 80rpx;
+}
+.left view{
+    height: 80rpx;
+}

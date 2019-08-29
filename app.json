@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/order/list/list",
     "pages/order/detail/detail",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,6 +37,5 @@
         "text": "会员"
       }
     ]
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }
