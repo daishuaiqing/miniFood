@@ -1,1 +1,142 @@
-/* pages/order/detail/detail.wxss */
+page {
+  background: rgb(243, 243, 243);
+}
+
+.status {
+  font-size: 42rpx;
+  width: 720rpx;
+  margin: 0 auto;
+  padding: 25rpx 0;
+}
+
+.delivery_info {
+  width: 720rpx;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.delivery_item {
+  padding: 32rpx 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery_item_name {
+  color: rgb(112, 112, 112);
+  font-size: 28rpx;
+}
+
+.delivery_item_value {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.line {
+  width: 700rpx;
+  margin: 0 auto;
+  height: 1rpx;
+  background: #eee;
+}
+
+.goods_list {
+  width: 720rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  background: #fff;
+  overflow: hidden;
+}
+
+.goods_item {
+  margin: 20rpx 20rpx;
+  display: flex;
+}
+
+.goods_icon image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.item_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15rpx 10rpx;
+}
+
+.goods_other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.goods_name {
+  font-size: 28rpx;
+}
+
+.goods_number {
+  font-size: 26rpx;
+  color: #555;
+}
+
+.goods_origin_price {
+  font-size: 25rpx;
+  color: #555;
+  text-decoration: line-through;
+}
+
+.goods_current_price {
+  font-size: 28rpx;
+  color: #2b2b2b;
+  font-weight: bold;
+  margin-left: 8rpx;
+}
+
+.amount_info {
+  width: 720rpx;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 15rpx;
+  border-radius: 10rpx;
+}
+
+.amount_item {
+  padding: 32rpx 15rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount_item_name {
+  color: #2b2b2b;
+  font-size: 26rpx;
+}
+
+.amount_item_value {
+  font-size: 26rpx;
+  color: #000;
+}
+.tb{
+  font-weight: bold;
+}
+.order_info{
+  width: 720rpx;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 15rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  padding: 20rpx 0;
+}
+.order_item{
+  padding: 15rpx 15rpx;
+  font-size: 24rpx;
+  color: #555;
+}
+.notice{
+  font-size: 20rpx;
+  color: #555;
+  padding-bottom: 20rpx;
+  text-align: center;
+}

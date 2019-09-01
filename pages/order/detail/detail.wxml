@@ -1,2 +1,88 @@
-<!--pages/order/detail/detail.wxml-->
-<text>pages/order/detail/detail.wxml</text>
+<view class='status'>
+  配送中 ＞
+</view>
+<view class='delivery_info'>
+  <view class='delivery_item'>
+    <text class='delivery_item_name'>配送时间</text>
+    <text class='delivery_item_value'>8月31日 10:45-11:45</text>
+  </view>
+  <view class='line'></view>
+  <view class='delivery_item'>
+    <text class='delivery_item_name'>收货人</text>
+    <text class='delivery_item_value'>代帅卿 18865550002</text>
+  </view>
+  <view class='line'></view>
+  <view class='delivery_item'>
+    <text class='delivery_item_name'>收货地址</text>
+    <text class='delivery_item_value'>花木公寓2号楼601</text>
+  </view>
+</view>
+<view class='goods_list'>
+  <view class='goods_item'>
+    <view class='goods_icon'>
+      <image src='https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg'></image>
+    </view>
+    <view class='item_content'>
+      <view class='goods_name'>小米电池一次性电池12粒</view>
+      <view class='goods_other'>
+        <text class='goods_number'>x2</text>
+        <view>
+          <text class='goods_origin_price'>￥129</text>
+          <text class='goods_current_price'>￥79</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class='goods_item'>
+    <view class='goods_icon'>
+      <image src='https://i.loli.net/2019/08/29/2vbpGD7KfliLXWn.jpg'></image>
+    </view>
+    <view class='item_content'>
+      <view class='goods_name'>杯子装精品消毒棉签</view>
+      <view class='goods_other'>
+        <text class='goods_number'>x2</text>
+        <view>
+          <text class='goods_origin_price'>￥129</text>
+          <text class='goods_current_price'>￥29</text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <!-- <view class='goods_item'>
+    <view class='goods_icon'>
+      <image src='https://i.loli.net/2019/08/29/MbIQGjwFHgrXCEB.jpg'></image>
+    </view>
+    <view class='item_content'>
+      <view class='goods_name'>索尼进口原生胶卷</view>
+      <view class='goods_other'>
+        <text class='goods_number'>x2</text>
+        <view>
+          <text class='goods_origin_price'>￥129</text>
+          <text class='goods_current_price'>￥99</text>
+        </view>
+      </view>
+    </view>
+  </view> -->
+</view>
+<view class='amount_info'>
+  <view class='amount_item'>
+    <text class='amount_item_name tb'>商品总价</text>
+    <text class='amount_item_value tb'>￥51</text>
+  </view>
+  <view class='line'></view>
+  <view class='amount_item'>
+    <text class='amount_item_name'>商品优惠</text>
+    <text class='delivery_item_value'>-￥12.00</text>
+  </view>
+  <view class='line'></view>
+  <view class='amount_item'>
+    <text class='amount_item_name'>配送费</text>
+    <text class='amount_item_value'>包邮</text>
+  </view>
+</view>
+<view class="order_info">
+  <view class="order_item">订单编号：190123819728102983</view>
+  <view class="order_item">下单时间：2019-08-31 10:45:33</view>
+  <view class="order_item">支付方式：微信支付</view>
+</view>
+<view class="notice">如收到的商品出现质量问题、错发、漏发等问题，请联系售后退款</view>

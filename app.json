@@ -37,5 +37,6 @@
         "text": "会员"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

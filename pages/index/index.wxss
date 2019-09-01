@@ -127,7 +127,7 @@ page {
 .priceContent image {
   height: 40rpx;
   width: 40rpx;
-  margin-right: 18rpx;
+  padding-right: 32rpx;
 }
 .goodsPrice {
   color: rgb(230, 146, 38);
