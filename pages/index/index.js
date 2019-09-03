@@ -66,6 +66,12 @@ Page({
     cartNumber:0,
     cartAmount:0,
   },
+  //去结算页面
+  gotoSettle: function(e){
+    wx.navigateTo({
+      url:'../order/create/create'
+    })
+  },
   //菜单切换
   navbarTap: function(e){
     this.setData({

@@ -1,0 +1,158 @@
+page{
+    background: #F4F4F4;
+}
+.common{
+    box-sizing: border-box;
+    width: 720rpx;
+    background: #ffffff;
+    margin: auto;
+    margin-top: 15rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+.user_address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.addr_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45rpx 15rpx;
+}
+.label{
+    background: #E94584;
+    color: #fff;
+    font-size: 20rpx;
+    margin: 0 10rpx;
+    line-height: 35rpx;
+    border-radius: 8rpx;
+    text-align: center;
+    display: inline;
+    padding: 2rpx 15rpx;
+}
+.addr_text{
+    font-size: 36rpx;
+    margin-left: 15rpx;
+    display: inline;
+}
+.user_info{
+    font-size: 26rpx;
+    color: rgb(92, 92, 92);
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+.goto{
+    color: rgb(126, 126, 126);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #FFFFFF;
+    margin-top: 15rpx;
+    border-radius: 15rpx;
+}
+.itemHeader{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 27rpx 45rpx;
+    justify-content: space-between;
+}
+.itemDateTime{
+    color: #000000;
+    font-size: 28rpx;
+    font-weight: 500;
+}
+.itemStatus{
+    color: rgb(185, 51, 51);
+    font-size: 24rpx;   
+}
+.itemContent{
+    display: flex;
+    flex-direction: column;
+    padding: 30rpx 45rpx;
+    border-top: 1rpx solid rgb(243, 243, 243);
+    border-bottom: 1rpx solid rgb(243, 243, 243);
+}
+.itemGoodsList{
+    display: flex;
+    flex-direction: ros;
+}
+.goodsIcon{
+    width: 118rpx;
+    height: 118rpx;
+    border-radius: 5rpx;
+    margin-right: 18rpx;
+}
+.itemPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.number{
+    font-size: 26rpx;
+    color: rgb(88, 88, 88);
+    margin-right: 15rpx;
+}
+.price{
+    font-size: 28rpx;
+    font-weight: bold;
+    color: #2b2b2b;
+}
+.goods_item{
+    display: flex;
+    justify-content: space-between;
+}
+.goods_item{
+    font-size: 28rpx;
+    margin: 25rpx 20rpx;
+}
+.line{
+    height: 1rpx;
+    width: 690rpx;
+    margin: auto;
+    background: #F4F4F4;
+}
+.price_style{
+    color: #E94584;
+}
+.heji{
+    font-size: 30rpx;
+}
+.coupon_style{
+    color: rgb(85, 85, 85);
+}
+.pay_rt{
+    width: 100%;
+    height: 100rpx;
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+}
+.pay_rt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pay_bt{
+    font-size: 32rpx;
+    margin-left: 35rpx;
+}
+.pay_money{
+    font-size: 30rpx;
+    color: #E94584;
+    margin-left: 10rpx;
+}
+.goto_pay{
+    width: 250rpx;
+    background: #E94584;
+    color: #fff;
+    height: 100%;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 32rpx;
+}

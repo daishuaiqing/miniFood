@@ -4,7 +4,8 @@
     "pages/order/list/list",
     "pages/order/detail/detail",
     "pages/user/user",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/order/create/create"
   ],
   "window": {
     "backgroundTextStyle": "light",

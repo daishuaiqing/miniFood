@@ -81,6 +81,6 @@
         <view class="freight">不含运费</view>
       </view>
     </view>
-    <view class="settle">去结算</view>
+    <view class="settle" bindtap='gotoSettle'>去结算</view>
   </view>
 </view>
