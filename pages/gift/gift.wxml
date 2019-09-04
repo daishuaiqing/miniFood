@@ -1,0 +1,7 @@
+<!--pages/gift/gift.wxml-->
+<view class='container-box'>
+  <view class='exchange'>
+    <input placeholder='请输入您的兑换码' type='text' bindblur='bindcode' bindinput='bindcodes'></input>
+    <button bindtap='exchange'>兑换</button>
+  </view>
+</view>

@@ -1,0 +1,187 @@
+/* pages/coupons/coupons.wxss */
+page {
+  background: #F5F5F7;
+}
+.tab-n {
+  height: 82rpx;
+  line-height: 82rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.tab-active text {
+  color: #16A54A;
+}
+.tab-active {
+  border-bottom: 4rpx solid #16A54A;
+  padding:0 16rpx;
+}
+.couponlist {
+  display: none;
+}
+.appear {
+  display: block;
+}
+.disappear {
+  display: none;
+}
+.nocoupon {
+  position:absolute;
+  left:54%;     /*定位父级的50%   */
+  top:50%;
+  transform: translate(-50%,-50%);
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+}
+.nocoupon image {
+  width: 136rpx;
+  height: 108rpx;
+}
+.nocoupon text {
+  margin-top: 26rpx;
+  color: #999;
+  margin-left: -28rpx;
+}
+.active {
+  padding: 0 16rpx;
+  border-bottom: 4rpx solid #fff;
+}
+.right-item{
+  display: none;
+}
+.actives {
+  display: block;
+}
+.coupons {
+  display: block;
+  padding: 0 28rpx; 
+
+}
+.nocoupons {
+  display: none;
+}
+.couponslist {
+  margin-top: 38rpx;
+  height: 212rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.couponslist .backimg {
+  position:absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 212rpx;
+  z-index: -1;
+}
+ .couponslist:nth-of-type(1) {
+  margin-top: 120rpx;
+}  
+.couponslist:nth-last-of-type(1) {
+  /* margin-bottom:212rpx; */
+}
+ .coupontype {
+  flex: 3.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+} 
+.couponinfo {
+  flex: 6.5;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60rpx;
+}
+.coupontitle {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.coupontitle text {
+  margin-top: 30rpx;
+}
+.coupontitle image {
+  width: 104rpx;
+  height: 80rpx;
+}
+.coupondenomination text{
+  color: #fff;
+}
+.coupondenomination text:nth-of-type(2) {
+  font-size: 96rpx;
+}
+.couponrule {
+  margin-top: 16rpx;
+}
+.couponrule text {
+  color: #fff;
+  font-size: 24rpx;
+}
+.couponstime {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.time text {
+  font-size: 22rpx;
+  color: #666;
+}
+.use {
+  margin-right: 20rpx;
+  width: 110rpx;
+  height: 40rpx;
+  border: 2rpx solid #16A54A;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.use text {
+  font-size: 22rpx;
+  color: #16A54A;
+}
+.selected {
+  margin-right: 24rpx;
+}
+.selected image {
+  width: 32rpx;
+  height: 32rpx;
+}
+.nouses{
+  display: none;
+}
+.save {
+  height: 200rpx;
+  background: #F5F5F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.save button {
+  width: 478rpx;
+  height: 92rpx;
+  line-height: 92rpx;
+  text-align: center;
+  border-radius:50rpx;
+}
+.bottom {
+  height: 212rpx;
+}

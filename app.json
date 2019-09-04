@@ -5,7 +5,9 @@
     "pages/order/detail/detail",
     "pages/user/user",
     "pages/test/test",
-    "pages/order/create/create"
+    "pages/order/create/create",
+    "pages/coupons/coupons",
+    "pages/gift/gift"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,6 +40,5 @@
         "text": "会员"
       }
     ]
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

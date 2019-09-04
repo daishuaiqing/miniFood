@@ -1,4 +1,3 @@
-// pages/user/user.js
 Page({
 
   /**
@@ -6,6 +5,32 @@ Page({
    */
   data: {
 
+  },
+
+  gotoCoupons: function(e){
+    wx.navigateTo({
+      url: '/pages/coupons/coupons',
+    })
+  },
+
+  gotoGift: function (e) {
+    wx.navigateTo({
+      url: '/pages/gift/gift',
+    })
+  },
+
+  gotoaddress() {
+    wx.chooseAddress({
+      success: res => {
+        console.log(res)
+      }
+    })
+  },
+
+  gotoservice() {
+    wx.makePhoneCall({
+      phoneNumber: '18865550002'
+    })
   },
 
   /**

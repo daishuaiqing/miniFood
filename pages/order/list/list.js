@@ -8,6 +8,13 @@ Page({
 
   },
 
+  //掉转详情页
+  gotoDetail: function(e){
+    wx.navigateTo({
+      url: '/pages/order/detail/detail',
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

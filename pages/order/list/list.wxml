@@ -4,7 +4,7 @@
             <text class="itemDateTime">2019-07-14 15:22:56</text>
             <text class="itemStatus">已签收</text>
         </view>
-        <view class="itemContent">
+        <view class="itemContent" bindtap='gotoDetail'>
             <view class="itemGoodsList">
                 <view>
                     <image class="goodsIcon" src="https://i.loli.net/2019/08/29/2vbpGD7KfliLXWn.jpg"></image>

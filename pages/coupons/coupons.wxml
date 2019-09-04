@@ -1,0 +1,119 @@
+<!--pages/coupons/coupons.wxml-->
+<view class='coupon-box'>
+  <view class='tab-n' >
+    <view class="{{activeTab=='0'? 'tab-active' : 'active'}}" id='0' bindtap="">
+      <text>未使用</text>
+    </view>
+    <view class="{{activeTab=='1'? 'tab-active' : 'active'}}" id='1' bindtap="">
+      <text>已使用</text>
+    </view>
+    <view class="{{activeTab=='2'? 'tab-active' : 'active'}}" id='2' bindtap="">
+      <text>已过期</text>
+    </view>
+  </view> 
+
+  <!--优惠券页面  -->
+  <view class="{{havelist ? 'coupons' : 'nocoupons'}}">
+    <view class="{{activeTab=='0'? 'actives' : 'right-item'}}">
+      <view class='couponslist' wx:for="{{freelist}}"  wx:key="index" 
+       bindtap='changeimg'
+       data-alphaBeta = "{{item}}">
+        <image src='../../../../icons/my/freebg.png' class='backimg'></image>
+        <view class='coupontype'>
+          <view class='coupondenomination'>
+            <text>￥</text>
+            <text>{{item.coupon_money}}</text>
+          </view>
+          <view class='couponrule'>
+            <text>{{item.coupon_rule}}</text>
+          </view>
+        </view>
+        <view class='couponinfo'>
+          <view class='coupontitle'>
+            <text>{{item.coupon_name}}</text>
+            <image src='../../../../icons/my/newadd.png'></image>
+          </view>
+          <view class='couponstime'>
+            <view class='time'>
+              <text>{{item.start_date}}-{{item.end_date}}</text>
+            </view>
+              <view  class="{{myindex ? 'use' : 'nouses'}}" bindtap='gotoindex'> 
+                <text>立即使用</text>
+              </view>  
+              <view class="{{myindex ? 'nouses' : 'selected'}}">
+               <image src='../../../../icons/my/selected.png' class="{{change===item.coupon_no ? 'appear' : 'disappear'}}"></image>
+               <image src='../../../../icons/my/freedefault.png' class="{{change===item.coupon_no ? 'disappear' : 'appear'}}"></image>
+             </view> 
+          </view>
+        </view>
+      </view>
+      <view class='bottom'></view>
+    </view>
+    <view class="{{myindex ? 'nocoupons' : 'save'}}">
+      <button type='primary' bindtap='gotoOrder'>确定</button>
+    </view>
+    <view class="{{activeTab=='1'? 'actives' : 'right-item'}}">
+      <view class='couponslist' wx:for="{{freelist}}"  wx:key="index" 
+       bindtap='changeimg'>
+       <image src='../../../../icons/my/freebg.png' class='backimg'></image>
+        <view class='coupontype'>
+          <view class='coupondenomination'>
+            <text>￥</text>
+            <text>{{item.coupon_money}}</text>
+          </view>
+          <view class='couponrule'>
+            <text>{{item.coupon_rule}}</text>
+          </view>
+        </view>
+        <view class='couponinfo'>
+          <view class='coupontitle'>
+            <text>{{item.coupon_name}}</text>
+            <image src='../../../../icons/my/used.png'></image>
+          </view>
+          <view class='couponstime'>
+            <view class='time'>
+              <text>{{item.start_date}}-{{item.end_date}}</text>
+            </view> 
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="{{activeTab =='2'? 'actives' : 'right-item'}}">
+      <view class='couponslist' wx:for="{{freelist}}"  wx:key="index" 
+       bindtap='changeimg'
+       data-alphaBeta = "{{item.id}}">
+        <image src='../../../../icons/my/usedbg.png' class='backimg'></image>
+        <view class='coupontype'>
+          <view class='coupondenomination'>
+            <text>￥</text>
+            <text>{{item.coupon_money}}</text>
+          </view>
+          <view class='couponrule'>
+            <text>{{item.coupon_rule}}</text>
+          </view>
+        </view>
+        <view class='couponinfo'>
+          <view class='coupontitle'>
+            <text>{{item.coupon_name}}</text>
+            <image src='../../../../icons/my/gq.png'></image>
+          </view>
+          <view class='couponstime'>
+            <view class='time'>
+              <text>{{item.start_date}}-{{item.end_date}}</text>
+            </view> 
+          </view>
+        </view>
+      </view> 
+    </view>
+  </view>
+<!--没有优惠券时的页面展示  -->
+   <view class="{{havelist ? 'couponlist' : 'coupons'}}">
+    <view class='nocoupon'>
+      <image src='../../../../icons/my/nofree.png'></image>
+      <text>您还没有优惠券</text>
+    </view>
+  </view> 
+
+
+  
+</view>
