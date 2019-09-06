@@ -1,74 +1,66 @@
 <view class="common addr_info">
-    <view class="address">
-        <view class="user_address">
-            <view class="label">家</view>
-            <view class="addr_text">花木公寓2号楼601</view>
-        </view>
-        <view class="user_info">代帅卿 18865550002</view>
+  <view class="address">
+    <view class="user_address">
+      <view class="label">家</view>
+      <view class="addr_text">{{userInfo.address}}</view>
     </view>
-    <view class="goto"></view>
+    <view class="user_info">{{userInfo.userName}} {{userInfo.mobile}}</view>
+  </view>
+  <view class="goto"></view>
 </view>
 <view class="common item">
-    <view class="itemHeader">
-        <text class="itemDateTime">1小时达</text>
-        <text class="itemStatus">预计今日15:12送达</text>
-    </view>
-    <view class="itemContent">
-        <view class="itemGoodsList">
-            <view>
-                <image class="goodsIcon" src="https://i.loli.net/2019/08/29/2vbpGD7KfliLXWn.jpg"></image>
-            </view>
-            <view>
-                <image class="goodsIcon" src="https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg"></image>
-            </view>
-            <view>
-                <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
-            </view>
-            <view>
-                <image class="goodsIcon" src="https://i.loli.net/2019/08/29/MRYLCJUp8DQTViF.jpg"></image>
-            </view>
-            <view>
-                <image class="goodsIcon" src="https://i.loli.net/2019/08/29/o8c3bkHeBPZhiaO.jpg"></image>
-            </view>
+  <view class="itemHeader">
+    <text class="itemDateTime">1小时达</text>
+    <text class="itemStatus">预计今日{{hours}}:{{minutes}}送达</text>
+  </view>
+
+  <view class="itemContent">
+    <scroll-view scroll-x>
+      <view class="itemGoodsList">
+        <view wx:for="{{goodsList}}" wx:key='unique'>
+          <image class="goodsIcon" src="{{item.picUrl}}"></image>
         </view>
-        <view class="itemPrice">
-            <text class="number">共5件</text>
-        </view>
+      </view>
+    </scroll-view>
+    <view class="itemPrice">
+      <text class="number">共{{cartNumber}}件</text>
     </view>
+  </view>
+
 </view>
 <view class="common">
-    <view class="goods_item">
-        <view class="">商品原价</view>
-        <view class="">￥54.8</view>
+  <view class="goods_item">
+    <view class="">商品总价</view>
+    <view class="">￥{{cartAmount}}</view>
+  </view>
+  <view class="line"></view>
+  <view class="goods_item">
+    <view class="">商品优惠</view>
+    <view class="price_style">-￥0</view>
+  </view>
+  <view class="line"></view>
+  <view class="goods_item">
+    <view class="">优惠券</view>
+    <view class="coupon_style">0张商品券 ></view>
+  </view>
+  <view class="line"></view>
+  <view class="goods_item">
+    <view class="">配送费</view>
+    <view class="price_style">￥0</view>
+  </view>
+  <view class="line"></view>
+  <view class="goods_item">
+    <view class=""></view>
+    <view class="">
+      <text class="heji">合计</text>
+      <text class="price_style">￥{{cartAmount}}</text>
     </view>
-    <view class="line"></view>
-    <view class="goods_item">
-        <view class="">商品优惠</view>
-        <view class="price_style">-￥30</view>
-    </view>
-    <view class="line"></view>
-    <view class="goods_item">
-        <view class="">优惠券</view>
-        <view class="coupon_style">0张商品券 ></view>
-    </view>
-    <view class="line"></view>
-    <view class="goods_item">
-        <view class="">配送费</view>
-        <view class="price_style">￥10</view>
-    </view>
-    <view class="line"></view>
-    <view class="goods_item">
-        <view class=""></view>
-        <view class="">
-            <text class="heji">合计</text>
-            <text class="price_style">￥34.8</text>
-        </view>
-    </view>
+  </view>
 </view>
 <view class="pay_rt">
-    <view>
-        <text class="pay_bt">付款</text>
-        <text class="pay_money">￥34.8</text>
-    </view>
-    <view class="goto_pay">去支付</view>
+  <view>
+    <text class="pay_bt">付款</text>
+    <text class="pay_money">￥{{cartAmount}}</text>
+  </view>
+  <view class="goto_pay">去支付</view>
 </view>

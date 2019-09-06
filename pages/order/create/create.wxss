@@ -80,7 +80,7 @@ page{
 }
 .itemGoodsList{
     display: flex;
-    flex-direction: ros;
+    flex-direction: row;
 }
 .goodsIcon{
     width: 118rpx;

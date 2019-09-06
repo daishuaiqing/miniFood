@@ -10,8 +10,8 @@
 <!-- 左边菜单 -->
 <scroll-view class="left" scroll-y>
   <view class="left-w">
-    <view class="{{ currentTab == index ? 'categoryChoose' : 'category' }}" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" wx:for="{{menuList}}" wx:key="unique" data-index="{{index}}">
-      <text class="categoryText">{{item}}</text>
+    <view class="{{ currentTab == index ? 'categoryChoose' : 'category' }}" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" wx:for="{{menuList}}" wx:key="unique" data-item="{{item}}" data-index="{{index}}">
+      <text class="categoryText">{{item.name}}</text>
     </view>
   </view>
 </scroll-view>
@@ -21,7 +21,7 @@
 
     <view class="goodsItem" wx:for="{{goodsList}}" wx:key='unique'>
       <view>
-        <image class="goodsIcon" src="{{item.iconUrl}}"></image>
+        <image class="goodsIcon" src="{{item.picUrl}}"></image>
       </view>
       <view class="goodsContent">
         <view class="title">
@@ -31,7 +31,7 @@
         <view class="priceContent">
           <span>
             <text class="goodsPrice">￥{{item.price}}</text>
-            <text class="goodsOriginPrice">{{item.originPrice}}</text>
+            <text class="goodsOriginPrice">{{item.originalPrice}}</text>
           </span>
           <view>
             <image src="/res/image/add.png" bindtap="addCart" data-goods="{{item}}"></image>

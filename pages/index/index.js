@@ -1,4 +1,5 @@
-//index.js
+const { getCategoryList } = require('../../api/category.js');
+const { getGoodsList } = require('../../api/goods.js');
 //获取应用实例
 const app = getApp()
 
@@ -11,24 +12,10 @@ Page({
     menuList: [
       '好吃推荐',
       '新品尝鲜',
-      '所有果品',
       '鲜果现切',
-      '招牌果品',
-      '西瓜密瓜',
-      '葡提浆果',
-      '桃李杏枣',
-      '纱卡拉卡',
-      '私密马赛'
+      '招牌果品'
     ],
     goodsList:[
-      {
-        id:12,
-        name:'A级精品香橙',
-        unit:'500g/份',
-        originPrice:'129.00',
-        price:'299.00',
-        iconUrl:'/res/image/qingcheng.png'
-      },
       {
         id:22,
         name:'小米电池一次性电池12粒',
@@ -36,31 +23,7 @@ Page({
         originPrice:'129.00',
         price:'299.00',
         iconUrl:'https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg'
-      },
-      {
-        id:11,
-        name:'索尼进口原生胶卷',
-        unit:'500g/份',
-        originPrice:'129.00',
-        price:'299.00',
-        iconUrl:'https://i.loli.net/2019/08/29/MbIQGjwFHgrXCEB.jpg'
-      },
-      {
-        id:19,
-        name:'泰国进口牛油果茶',
-        unit:'500g/份',
-        originPrice:'129.00',
-        price:'299.00',
-        iconUrl:'https://i.loli.net/2019/08/29/MRYLCJUp8DQTViF.jpg'
-      },
-      {
-        id:41,
-        name:'杯子装精品消毒棉签',
-        unit:'500g/份',
-        originPrice:'129.00',
-        price:'299.00',
-        iconUrl:'https://i.loli.net/2019/08/29/2vbpGD7KfliLXWn.jpg'
-      },
+      }
     ],
     cart:[],
     cartNumber:0,
@@ -77,10 +40,11 @@ Page({
     this.setData({
       currentTab: e.currentTarget.dataset.index
     })
+    this.getGoodsList(e.currentTarget.dataset.item.id,1)
   },
   //点击商品加号，加入购物车
   addCart: function(e){
-    let { id, name, price } = e.currentTarget.dataset.goods
+    let { id, name, price, picUrl } = e.currentTarget.dataset.goods
     let goodsArr = wx.getStorageSync('cart');
     let i=0
     for( ; i<goodsArr.length; i++){
@@ -94,7 +58,8 @@ Page({
         id,
         name,
         price,
-        number:1
+        number:1,
+        picUrl:picUrl
       })
     }
     wx.setStorageSync('cart', goodsArr)
@@ -131,6 +96,29 @@ Page({
   onLoad: function () {
     //初始化加载时，加载购物车商品数量和金额
     this.calc()
+    this.getCategoryList()
+  },
+  //获取分类
+  getCategoryList: function(){
+    getCategoryList().then(res=>{
+      if(res.data.length>0){
+        this.setData({
+          menuList: res.data
+        })
+        this.getGoodsList(res.data[0].id,1)
+      }
+    })
+  },
+  //获取商品
+  getGoodsList: function(categoryId,pageNum){
+    getGoodsList({
+      categoryId: categoryId,
+      pageNum: pageNum
+    }).then(res=>{
+      this.setData({
+        goodsList: res.data.content
+      })
+    })
   },
   //点击购物车图标显示加入购物车的商品
   openCart(){
