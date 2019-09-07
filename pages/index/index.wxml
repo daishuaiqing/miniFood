@@ -39,7 +39,7 @@
         </view>
       </view>
     </view>
-    
+
   </view>
 </scroll-view>
 <view class="seat"></view>
@@ -55,19 +55,23 @@
       </view>
     </view>
 
-    <view class="cartGoods" wx:for="{{cart}}" wx:key="unique">
-      <view class="cartGoodsName">{{item.name}}</view>
-      <view class="cartGoodsPrice">￥{{item.price}}</view>
-      <view class="cartGoodsNumber">
-        <view>
-          <image class="numberBt" src="/res/image/cut.png"></image>
-        </view>
-        <view class="bumberText">{{item.number}}</view>
-        <view>
-          <image class="numberBt" src="/res/image/add.png"></image>
+    <scroll-view scroll-y="true" class="cartModel">
+      <view class="cartGoods" wx:for="{{cart}}" wx:key="unique">
+        <view class="cartGoodsName">{{item.name}}</view>
+        <view class="cartGoodsPrice">￥{{item.price}}</view>
+        <view class="cartGoodsNumber">
+          <view>
+            <image class="numberBt" src="/res/image/cut.png"></image>
+          </view>
+          <view class="bumberText">{{item.number}}</view>
+          <view>
+            <image class="numberBt" src="/res/image/add.png"></image>
+          </view>
         </view>
       </view>
-    </view>
+    </scroll-view>
+
+
 
   </view>
   <view class="cartRect" style="visibility:{{isShowCartBar?'visible':'hidden'}}">

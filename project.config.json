@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -82,6 +82,20 @@
 					"id": -1,
 					"name": "pages/order/create",
 					"pathName": "pages/order/create/create",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "gift",
+					"pathName": "pages/gift/gift",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "coupons",
+					"pathName": "pages/coupons/coupons",
 					"scene": null
 				}
 			]

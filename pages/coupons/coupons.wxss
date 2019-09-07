@@ -5,6 +5,7 @@ page {
 .tab-n {
   height: 82rpx;
   line-height: 82rpx;
+  font-size: 28rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
