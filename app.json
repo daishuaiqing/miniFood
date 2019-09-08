@@ -7,7 +7,8 @@
     "pages/test/test",
     "pages/order/create/create",
     "pages/coupons/coupons",
-    "pages/gift/gift"
+    "pages/gift/gift",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

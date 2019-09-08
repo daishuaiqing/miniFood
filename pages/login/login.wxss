@@ -1,0 +1,52 @@
+page {
+  background: #fff;
+}
+
+.login-container {
+  padding: 0 45rpx;
+}
+
+.logo-box, .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*logo  */
+
+.logo-box {
+  padding: 100rpx 0 50rpx 0;
+  margin-bottom: 50rpx;
+  border-bottom: 3rpx solid #d3d3d3;
+}
+
+.logo-box .logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+
+.logo-box .name {
+  font-size: 40rpx;
+}
+
+.content-box {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 80rpx;
+}
+
+.content-box .title {
+  font-size: 32rpx;
+  padding-bottom: 16rpx;
+}
+
+.subTitle {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.btn {
+  border-radius: 10rpx;
+}

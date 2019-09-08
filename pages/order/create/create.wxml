@@ -1,10 +1,10 @@
 <view class="common addr_info">
-  <view class="address">
+  <view class="address" bindtap='goAddress'>
     <view class="user_address">
       <view class="label">家</view>
-      <view class="addr_text">{{userInfo.address}}</view>
+      <view class="addr_text">{{addressInfo.detailInfo}}</view>
     </view>
-    <view class="user_info">{{userInfo.userName}} {{userInfo.mobile}}</view>
+    <view class="user_info">{{addressInfo.userName}} {{addressInfo.telNumber}}</view>
   </view>
   <view class="goto"></view>
 </view>
@@ -62,5 +62,5 @@
     <text class="pay_bt">付款</text>
     <text class="pay_money">￥{{cartAmount}}</text>
   </view>
-  <view class="goto_pay">去支付</view>
+  <view class="goto_pay" bindtap="pay">去支付</view>
 </view>

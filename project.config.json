@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wxcca8ee64dd17c332",
+	"appid": "wxf187f64ff66424c2",
 	"projectname": "miniFood",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -96,6 +96,13 @@
 					"id": -1,
 					"name": "coupons",
 					"pathName": "pages/coupons/coupons",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
 					"scene": null
 				}
 			]

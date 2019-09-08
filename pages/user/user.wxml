@@ -1,11 +1,15 @@
 <view class='my-box'>
   <view class="content">
     <view class='headerimg'>
-      <image model="aspectFill" src="/res/image/me.jpg"></image>
+      <image model="aspectFill" src="{{userInfo?userInfo.avatar:'../../res/image/head.jpeg'}}"></image>
     </view>
-    <view class='userinfo'>
+    <view class='userinfo' wx:if="{{userInfo?false:true}}" bindtap="login">
       <text class='username'>登陆/注册</text>
-         <text class="tip">立即开启水果之旅</text>
+      <text class="tip">立即开启水果之旅</text>
+    </view>
+    <view class='userinfo' wx:if="{{userInfo?true:false}}">
+      <text class='username'>{{userInfo.nick}}</text>
+      <text class="tip">欢迎使用</text>
     </view>
   </view>
   <view class='my-kind'>
