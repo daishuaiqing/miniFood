@@ -1,4 +1,4 @@
-const { createOrder } = require('../../../api/goods.js');
+const { createOrder } = require('../../../api/order.js');
 Page({
 
   /**
@@ -84,15 +84,17 @@ Page({
       "goodsPrice": this.data.cartAmount,
       "message": "",
       "mobile": this.data.addressInfo.telNumber,
-      "orderGoodsList": [
-        {
-          "goodsId": 0,
-          "number": 0,
-        }
-      ],
+      "orderGoodsList": [],
       "orderType": 0,
       "province": this.data.addressInfo.provinceName,
       "region": this.data.addressInfo.countyName
+    }
+    let cartList = wx.getStorageSync('cart')
+    for(let i=0;i<cartList.length;i++){
+      orderInfo.orderGoodsList.push({
+        "goodsId": cartList[i].id,
+        "number": cartList[i].number,
+      })
     }
     console.log(orderInfo)
     createOrder(orderInfo).then(res=>{

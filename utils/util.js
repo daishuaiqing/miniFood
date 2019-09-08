@@ -40,7 +40,7 @@ const request = (url, data = {}, method = "GET") => {
       fail(err) {
         console.log(err)
         reject(err)
-        app.openNetworkErrorModal(err.errMsg);
+        // app.openNetworkErrorModal(err.errMsg);
       }
     })
   });

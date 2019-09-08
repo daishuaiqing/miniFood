@@ -1,89 +1,26 @@
 <view class="container">
-    <view class="item">
-        <view class="itemHeader">
-            <text class="itemDateTime">2019-07-14 15:22:56</text>
-            <text class="itemStatus">已签收</text>
-        </view>
-        <view class="itemContent" bindtap='gotoDetail'>
-            <view class="itemGoodsList">
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/2vbpGD7KfliLXWn.jpg"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/MRYLCJUp8DQTViF.jpg"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/o8c3bkHeBPZhiaO.jpg"></image>
-                </view>
-            </view>
-            <view class="itemPrice">
-                <text class="number">共5件 实付:</text>
-                <text class="price">￥42.5</text>
-            </view>
-        </view>
-        <view class="bts">
-            <view class="rebuyBt">再来一单</view>
-            <view class="remark">评价</view>
-        </view>
+  <view class="item" wx:for="{{orderList}}" wx:key='unique'>
+    <view class="itemHeader">
+      <text class="itemDateTime">{{item.order.createTime}}</text>
+      <text class="itemStatus">已签收</text>
     </view>
-    <view class="item">
-        <view class="itemHeader">
-            <text class="itemDateTime">2019-07-14 15:22:56</text>
-            <text class="itemStatus">已签收</text>
+    <view class="itemContent" bindtap='gotoDetail'>
+      <scroll-view scroll-x='true'>
+        <view class="itemGoodsList">
+          <view wx:for="{{item.goods}}" wx:key='unique'>
+            <image class="goodsIcon" src="{{item.picUrl}}"></image>
+          </view>
         </view>
-        <view class="itemContent">
-            <view class="itemGoodsList">
-                <view>
-                    <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/MbIQGjwFHgrXCEB.jpg"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/2vbpGD7KfliLXWn.jpg"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/MRYLCJUp8DQTViF.jpg"></image>
-                </view>
-            </view>
-            <view class="itemPrice">
-                <text class="number">共5件 实付:</text>
-                <text class="price">￥42.5</text>
-            </view>
-        </view>
-        <view class="bts">
-            <view class="rebuyBt">再来一单</view>
-            <view class="remark">评价</view>
-        </view>
+      </scroll-view>
+
+      <view class="itemPrice">
+        <text class="number">共5件 实付:</text>
+        <text class="price">￥{{item.order.orderPrice}}</text>
+      </view>
     </view>
-    <view class="item">
-        <view class="itemHeader">
-            <text class="itemDateTime">2019-07-14 15:22:56</text>
-            <text class="itemStatus">已签收</text>
-        </view>
-        <view class="itemContent">
-            <view class="itemGoodsList">
-                <view>
-                    <image class="goodsIcon" src="https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg"></image>
-                </view>
-                <view>
-                    <image class="goodsIcon" src="/res/image/qingcheng.png"></image>
-                </view>
-            </view>
-            <view class="itemPrice">
-                <text class="number">共5件 实付:</text>
-                <text class="price">￥42.5</text>
-            </view>
-        </view>
-        <view class="bts">
-            <view class="rebuyBt">再来一单</view>
-            <view class="remark">评价</view>
-        </view>
+    <view class="bts">
+      <view class="rebuyBt">再来一单</view>
+      <view class="remark">评价</view>
     </view>
+  </view>
 </view>

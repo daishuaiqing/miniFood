@@ -98,6 +98,9 @@ Page({
     this.calc()
     this.getCategoryList()
   },
+  onShow: function(){
+    this.calc()
+  },
   //获取分类
   getCategoryList: function(){
     getCategoryList().then(res=>{

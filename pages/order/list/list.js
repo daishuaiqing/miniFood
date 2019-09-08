@@ -1,4 +1,4 @@
-// pages/order/list/list.js
+const { getOrderList } = require("../../../api/order.js")
 Page({
 
   /**
@@ -6,6 +6,16 @@ Page({
    */
   data: {
 
+  },
+
+  //获取订单列表
+  getOrderList: function(){
+    getOrderList().then(res=>{
+      console.log(res.data)
+      this.setData({
+        orderList: res.data
+      })
+    })
   },
 
   //掉转详情页
@@ -33,7 +43,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getOrderList()
   },
 
   /**
