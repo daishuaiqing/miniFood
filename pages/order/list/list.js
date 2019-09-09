@@ -11,15 +11,34 @@ Page({
   //获取订单列表
   getOrderList: function(){
     getOrderList().then(res=>{
-      console.log(res.data)
+      let orderList = res.data
+      for(let i=0;i<orderList.length;i++){
+        //订单状态转文字
+        switch(orderList[i].order.orderStatus){
+          case 0 : orderList[i].order.orderStatusText='待付款'; break;
+          case 1 : orderList[i].order.orderStatusText='待配送'; break;
+          case 2 : orderList[i].order.orderStatusText='已发出'; break;
+          case 3 : orderList[i].order.orderStatusText='已完成'; break;
+          case 4 : orderList[i].order.orderStatusText='已关闭'; break;
+          case 5 : orderList[i].order.orderStatusText='无效订单'; break;
+        }
+        //计算订单商品数量
+        let goodsNumber = 0
+        let goodsList = orderList[i].goods
+        for (let index in goodsList){
+          goodsNumber += goodsList[index].number
+        }
+        orderList[i].goodsNumber = goodsNumber
+      }
       this.setData({
-        orderList: res.data
+        orderList: orderList
       })
     })
   },
 
   //掉转详情页
   gotoDetail: function(e){
+    wx.setStorageSync('orderInfo', e.currentTarget.dataset.item)
     wx.navigateTo({
       url: '/pages/order/detail/detail',
     })

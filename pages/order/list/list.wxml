@@ -2,9 +2,11 @@
   <view class="item" wx:for="{{orderList}}" wx:key='unique'>
     <view class="itemHeader">
       <text class="itemDateTime">{{item.order.createTime}}</text>
-      <text class="itemStatus">已签收</text>
+      <text class="itemStatus">
+        {{item.order.orderStatusText}}
+      </text>
     </view>
-    <view class="itemContent" bindtap='gotoDetail'>
+    <view class="itemContent" bindtap='gotoDetail' data-item='{{item}}'>
       <scroll-view scroll-x='true'>
         <view class="itemGoodsList">
           <view wx:for="{{item.goods}}" wx:key='unique'>
@@ -14,7 +16,7 @@
       </scroll-view>
 
       <view class="itemPrice">
-        <text class="number">共5件 实付:</text>
+        <text class="number">共{{item.goodsNumber}}件 实付:</text>
         <text class="price">￥{{item.order.orderPrice}}</text>
       </view>
     </view>

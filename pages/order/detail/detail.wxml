@@ -9,26 +9,26 @@
   <view class='line'></view>
   <view class='delivery_item'>
     <text class='delivery_item_name'>收货人</text>
-    <text class='delivery_item_value'>代帅卿 18865550002</text>
+    <text class='delivery_item_value'>{{orderInfo.order.consignee}} {{orderInfo.order.mobile}}</text>
   </view>
   <view class='line'></view>
   <view class='delivery_item'>
     <text class='delivery_item_name'>收货地址</text>
-    <text class='delivery_item_value'>花木公寓2号楼601</text>
+    <text class='delivery_item_value'>{{orderInfo.order.address}}</text>
   </view>
 </view>
 <view class='goods_list'>
-  <view class='goods_item'>
+  <view class='goods_item' wx:for="{{orderInfo.goods}}" wx:key='unique'>
     <view class='goods_icon'>
-      <image src='https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg'></image>
+      <image src='{{item.picUrl}}'></image>
     </view>
     <view class='item_content'>
-      <view class='goods_name'>小米电池一次性电池12粒</view>
+      <view class='goods_name'>{{item.goodsName}}</view>
       <view class='goods_other'>
-        <text class='goods_number'>x2</text>
+        <text class='goods_number'>x{{item.number}}</text>
         <view>
-          <text class='goods_origin_price'>￥129</text>
-          <text class='goods_current_price'>￥79</text>
+          <!-- <text class='goods_origin_price'>￥129</text> -->
+          <text class='goods_current_price'>￥{{item.price}}</text>
         </view>
       </view>
     </view>
@@ -67,12 +67,12 @@
 <view class='amount_info'>
   <view class='amount_item'>
     <text class='amount_item_name tb'>商品总价</text>
-    <text class='amount_item_value tb'>￥51</text>
+    <text class='amount_item_value tb'>￥{{orderInfo.order.orderPrice}}</text>
   </view>
   <view class='line'></view>
   <view class='amount_item'>
     <text class='amount_item_name'>商品优惠</text>
-    <text class='delivery_item_value'>-￥12.00</text>
+    <text class='delivery_item_value'>-￥0.00</text>
   </view>
   <view class='line'></view>
   <view class='amount_item'>
@@ -81,8 +81,8 @@
   </view>
 </view>
 <view class="order_info">
-  <view class="order_item">订单编号：190123819728102983</view>
-  <view class="order_item">下单时间：2019-08-31 10:45:33</view>
+  <view class="order_item">订单编号：{{orderInfo.order.orderSn}}</view>
+  <view class="order_item">下单时间：{{orderInfo.order.createTime}}</view>
   <view class="order_item">支付方式：微信支付</view>
 </view>
 <view class="notice">如收到的商品出现质量问题、错发、漏发等问题，请联系售后退款</view>

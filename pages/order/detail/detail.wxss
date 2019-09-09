@@ -87,9 +87,8 @@ page {
 }
 
 .goods_current_price {
-  font-size: 28rpx;
-  color: #2b2b2b;
-  font-weight: bold;
+  font-size: 25rpx;
+  color: #555;
   margin-left: 8rpx;
 }
 
