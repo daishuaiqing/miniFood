@@ -8,3 +8,7 @@ export const createOrder = info => {
 export const getOrderList = info => {
   return request(baseUrl + '/oms/order/wx/list', info)
 }
+
+export const payOrder = info => {
+  return request(baseUrl + '/oms/order/pay', info)
+}
