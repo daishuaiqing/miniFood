@@ -1,3 +1,4 @@
+const { checkLoginUrl } = require("../api/login.js")
 const app = getApp();
 
 const formatTime = date => {
@@ -34,7 +35,7 @@ const request = (url, data = {}, method = "GET") => {
         } else {
           console.log(res)
           reject(res)
-          app.openNetworkErrorModal();
+          //app.openNetworkErrorModal();
         }
       },
       fail(err) {
@@ -66,9 +67,28 @@ const login = () => {
     });
   });
 }
+//校验是否登陆
+const checkLogin = () => {
+  return new Promise(function (resolve, reject) {
+    let token = wx.getStorageSync("token")
+    let userInfo = wx.getStorageSync("userInfo")
+    if(token && userInfo){
+      request(checkLoginUrl).then(res=>{
+        console.log('token有效性',res.data)
+        if(!res.data){
+          resolve(false);
+        }
+      })
+      resolve(true);
+    }else{
+      resolve(false);
+    }
+  });
+}
 
 module.exports = {
   request: request,
   login,
+  checkLogin,
   formatTime: formatTime
 }

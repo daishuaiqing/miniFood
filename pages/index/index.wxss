@@ -130,7 +130,7 @@ page {
   padding-right: 32rpx;
 }
 .goodsPrice {
-  color: rgb(230, 146, 38);
+  color: #E94584;
   font-size: 26rpx;
 }
 .goodsOriginPrice {
@@ -159,14 +159,14 @@ page {
 .settle {
   width: 194rpx;
   height: 100rpx;
-  background: #F2A43B;
+  background: #408D4A;
   text-align: center;
   line-height: 100rpx;
   color: #FFFFFF;
   font-size: 31rpx;
 }
 .total {
-  color: rgb(230, 146, 38);
+  color: #E94584;
   font-size: 33rpx;
   margin-left: 33rpx;
   margin-top: 15rpx;
@@ -196,15 +196,17 @@ page {
   margin-left: 15rpx;
   color: #666666;
   font-size: 27rpx;
+  width: 300rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
 }
 .cartGoodsPrice {
-  color: rgb(230, 146, 38);
+  color: #E94584;
   font-size: 26rpx;
 }
 .cartGoodsNumber {
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .numberBt {
   height: 40rpx;

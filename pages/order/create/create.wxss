@@ -23,7 +23,7 @@ page{
     padding: 45rpx 15rpx;
 }
 .label{
-    background: #E94584;
+    background: #408D4A;
     color: #fff;
     font-size: 20rpx;
     margin: 0 10rpx;
@@ -149,7 +149,7 @@ page{
 }
 .goto_pay{
     width: 250rpx;
-    background: #E94584;
+    background: #408D4A;
     color: #fff;
     height: 100%;
     line-height: 100rpx;

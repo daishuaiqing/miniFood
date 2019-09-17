@@ -1,4 +1,7 @@
 const { getOrderList } = require("../../../api/order.js")
+const {
+  checkLogin
+} = require('../../../utils/util.js');
 Page({
 
   /**
@@ -62,7 +65,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.getOrderList()
+    checkLogin().then(res=>{
+      if(res){
+        this.getOrderList()
+      }else{
+        
+      }
+    })
+    
   },
 
   /**

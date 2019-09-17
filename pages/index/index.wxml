@@ -18,7 +18,6 @@
 <!-- 右边商品列表 -->
 <scroll-view class="right" scroll-y>
   <view class="right-w">
-
     <view class="goodsItem" wx:for="{{goodsList}}" wx:key='unique'>
       <view>
         <image class="goodsIcon" src="{{item.picUrl}}"></image>
@@ -44,7 +43,7 @@
 </scroll-view>
 <view class="seat"></view>
 <view class="cart">
-  <view style="display:{{isShowCart?'':'none'}}">
+  <view style="display:{{isShowCart?'':'none'}}" class="cartPanel">
     <view class="cartHeader">
       <view class="delTitle">已选商品</view>
       <view class="del" bindtap="delAll">
@@ -54,26 +53,23 @@
         <view class="delBt">清空</view>
       </view>
     </view>
-
     <scroll-view scroll-y="true" class="cartModel">
       <view class="cartGoods" wx:for="{{cart}}" wx:key="unique">
         <view class="cartGoodsName">{{item.name}}</view>
         <view class="cartGoodsPrice">￥{{item.price}}</view>
         <view class="cartGoodsNumber">
-          <view>
+          <view bindtap="cutGoodsNumber" data-item="{{item}}">
             <image class="numberBt" src="/res/image/cut.png"></image>
           </view>
           <view class="bumberText">{{item.number}}</view>
-          <view>
+          <view bindtap="addGoodsNumber" data-item="{{item}}">
             <image class="numberBt" src="/res/image/add.png"></image>
           </view>
         </view>
       </view>
     </scroll-view>
-
-
-
   </view>
+
   <view class="cartRect" style="visibility:{{isShowCartBar?'visible':'hidden'}}">
     <view class="calcuPrice">
       <view class="number-icon">{{cartNumber}}</view>

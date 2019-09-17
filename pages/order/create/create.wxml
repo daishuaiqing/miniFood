@@ -10,7 +10,7 @@
 </view>
 <view class="common item">
   <view class="itemHeader">
-    <text class="itemDateTime">1小时达</text>
+    <text class="itemDateTime"></text>
     <text class="itemStatus">预计今日{{hours}}:{{minutes}}送达</text>
   </view>
 
