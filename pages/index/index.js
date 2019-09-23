@@ -16,20 +16,8 @@ Page({
     isShowCartBar: true, //是否显示购物车的Bar
     cart: [], //购物车
     currentTab: 0,
-    menuList: [
-      '好吃推荐',
-      '新品尝鲜',
-      '鲜果现切',
-      '招牌果品'
-    ],
-    goodsList: [{
-      id: 22,
-      name: '小米电池一次性电池12粒',
-      unit: '12粒/盒',
-      originPrice: '129.00',
-      price: '299.00',
-      iconUrl: 'https://i.loli.net/2019/08/29/GeBvOhXpglQYAtu.jpg'
-    }],
+    menuList: [],
+    goodsList: [],
     cart: [],
     cartNumber: 0,
     cartAmount: 0,
@@ -144,7 +132,7 @@ Page({
     let goodsArr = wx.getStorageSync('cart');
     for (let i = 0; i < goodsArr.length; i++) {
       if (goodsArr[i].id === goodsId) {
-        if (goodsArr[i].number >= 1){
+        if (goodsArr[i].number > 1){
           goodsArr[i].number--
         }else{
           goodsArr.splice(i, 1);
