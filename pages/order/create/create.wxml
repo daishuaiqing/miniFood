@@ -1,10 +1,16 @@
 <view class="common addr_info">
   <view class="address" bindtap='goAddress'>
-    <view class="user_address">
-      <view class="label">家</view>
-      <view class="addr_text">{{addressInfo.detailInfo}}</view>
+    <view wx:if="{{hasAddress}}">
+      <view class="user_address">
+        <view class="label">家</view>
+        <view class="addr_text">{{addressInfo.detailInfo}}</view>
+      </view>
+      <view class="user_info">{{addressInfo.userName}} {{addressInfo.telNumber}}</view>
     </view>
-    <view class="user_info">{{addressInfo.userName}} {{addressInfo.telNumber}}</view>
+    <view wx:if="{{!hasAddress}}">
+      <image class="address_icon" src="../../../res/image/address.png"></image>
+      <text class="address_click">点击选择收货地址</text>
+    </view>
   </view>
   <view class="goto"></view>
 </view>

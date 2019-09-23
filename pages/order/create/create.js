@@ -6,14 +6,8 @@ Page({
    */
   data: {
     goodsList: [],
-    addressInfo: {
-      userName: '张三',
-      provinceName: '',
-      cityName: '',
-      countyName: '',
-      telNumber: '18865550002',
-      detailInfo: '花木公寓2号楼601'
-    }
+    addressInfo: null,
+    hasAddress: false
   },
 
   /**
@@ -56,7 +50,8 @@ Page({
     wx.chooseAddress({
       success(res) {
         _that.setData({
-          addressInfo: res
+          addressInfo: res,
+          hasAddress: true
         })
       },
       fail: err => {

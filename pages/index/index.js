@@ -159,6 +159,11 @@ Page({
     })
   },
   onLoad: function() {
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading'
+    })
     //初始化加载时，加载购物车商品数量和金额
     this.calc()
     this.getCategoryList()
@@ -174,6 +179,7 @@ Page({
           menuList: res.data
         })
         this.getGoodsList(res.data[0].id, 1)
+        wx.hideLoading()
       }
     })
   },
