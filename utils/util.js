@@ -77,9 +77,10 @@ const checkLogin = () => {
         console.log('token有效性',res.data)
         if(!res.data){
           resolve(false);
+        }else{
+          resolve(true);
         }
       })
-      resolve(true);
     }else{
       resolve(false);
     }
