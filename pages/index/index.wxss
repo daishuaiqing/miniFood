@@ -133,6 +133,9 @@ page {
   color: #E94584;
   font-size: 26rpx;
 }
+.goodsPrice .priceNumber {
+  font-size: 32rpx;
+}
 .goodsOriginPrice {
   color: #969696;
   font-size: 24rpx;
@@ -144,6 +147,7 @@ page {
   bottom: 0rpx;
 }
 .cartRect {
+  position: relative;
   height: 100rpx;
   width: 100%;
   background: #FFFFFF;
@@ -176,11 +180,8 @@ page {
   font-size: 18rpx;
   margin-left: 40rpx;
 }
-.calcuPrice image {
-  width: 100rpx;
-  height: 100rpx;
-  margin-top: -18rpx;
-  margin-left: 18rpx;
+.cartModel{
+  max-height: 550rpx;
 }
 .cartGoods {
   height: 130rpx;
@@ -259,7 +260,11 @@ page {
   margin-left: 80rpx;
   line-height: 36rpx;
   margin-top: -12rpx;
+
 }
-.cartModel{
-  max-height: 550rpx;
+.calcuPrice image {
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: -18rpx;
+  margin-left: 18rpx;
 }

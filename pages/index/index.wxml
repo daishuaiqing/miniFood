@@ -29,7 +29,7 @@
         </view>
         <view class="priceContent">
           <span>
-            <text class="goodsPrice">￥{{item.price}}</text>
+            <text class="goodsPrice">￥<text class="priceNumber">{{item.price}}</text></text>
             <text class="goodsOriginPrice">{{item.originalPrice}}</text>
           </span>
           <view>
